@@ -1,1 +1,39 @@
 @import '../../variables.scss';
+
+.words-list {
+  border: 3px solid $main-font-color;
+  border-radius: 10px;
+  list-style: none;
+  overflow: hidden;
+
+  &__word {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: $dark-backgroud-color;
+    padding: 10px;
+    &:nth-child(even) {
+      background-color: $main-font-hover-color;
+    }
+  }
+}
+
+.word {
+  &__delete-button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    cursor: pointer;
+    & img {
+      width: 100%;
+      &:hover {
+        filter: brightness(0);
+      }
+    }
+  }
+}
