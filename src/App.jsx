@@ -8,8 +8,6 @@ import WordsTester from './components/wordsTester/WordsTester';
 import History from './components/history/History';
 import Footer from './components/footer/Footer';
 
-import './App.scss';
-
 function App() {
   return (
     <>
