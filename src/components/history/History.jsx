@@ -3,8 +3,6 @@ import React from 'react';
 import './history.scss';
 
 function History({ history }) {
-  console.log(history);
-
   return (
     <section className="history">
       <ul className="history__list">
