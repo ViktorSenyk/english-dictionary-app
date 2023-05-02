@@ -10,17 +10,17 @@ function Footer() {
         <ul className="social-navigation__links">
           <li className="social-navigation__link">
             <a href="https://github.com/ViktorSenyk">
-              <img src="./footer/github.svg" alt="GitHub" />
+              <img src="./images/footer/github.svg" alt="GitHub" />
             </a>
           </li>
           <li className="social-navigation__link">
             <a href="https://www.linkedin.com/in/viktor-senyk-691b56271">
-              <img src="./footer/linkedin.svg" alt="LinkedIn" />
+              <img src="./images/footer/linkedin.svg" alt="LinkedIn" />
             </a>
           </li>
           <li className="social-navigation__link">
             <a href="mailto:victor.senyk.vs@gmail.com">
-              <img src="./footer/email.svg" alt="eMail" />
+              <img src="./images/footer/email.svg" alt="eMail" />
             </a>
           </li>
         </ul>

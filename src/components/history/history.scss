@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.history {
+  width: 400px;
+  text-align: center;
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    min-height: 100px;
+    border: 3px solid $main-color;
+    border-radius: 10px;
+    list-style: none;
+    overflow: hidden;
+    padding: 5px 0;
+  }
+  
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-backgroud-color;
+
+    &:nth-child(2) {
+      font-weight: bold;
+    }
+
+    &:nth-child(even) {
+      background-color: $main-light-color;
+    }
+
+    & p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33.3%;
+      height: 40px;
+      border: 1px solid gray;
+      padding: 5px;
+    }
+  }
+}

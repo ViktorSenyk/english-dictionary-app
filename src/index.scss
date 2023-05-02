@@ -10,9 +10,13 @@
 html,
 body {
   height: 100%;
-  background-color: $main-backgroud-color;
+  background-color: $light-backgroud-color;
   font-family: 'Montserrat', sans-serif;
-  color: $main-font-color;
+  color: $main-color;
+}
+
+a {
+  color: $main-color;
 }
 
 #root {

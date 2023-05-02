@@ -10,7 +10,7 @@ function Header() {
       <nav className="navigation">
         <ul className="navigation__links-list">
           <li className="navigation__link">
-            <Link to="/">Home</Link>
+            <Link to="/">Words List</Link>
           </li>
           <li className="navigation__link">
             <Link to="/create">Creator</Link>

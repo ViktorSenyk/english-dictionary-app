@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './home.scss';
+import './wordsList.scss';
 
-function Home({ storedWords, deleteWord }) {
+function WordsList({ storedWords, deleteWord }) {
   return (
-    <section className="home">
+    <section>
       <ul className="words-list">
         {storedWords.map(wordData => (
           <li key={wordData.id} className="words-list__word word">
@@ -12,7 +12,7 @@ function Home({ storedWords, deleteWord }) {
               <b>{wordData.eng}</b> - <i>{wordData.ukr}</i>
             </p>
             <button className="word__delete-button" onClick={() => deleteWord(wordData.id)}>
-              <img src="./home/delete.svg" alt="deleteBtn" />
+              <img src="./images/home/delete.svg" alt="deleteBtn" />
             </button>
           </li>
         ))}
@@ -21,4 +21,4 @@ function Home({ storedWords, deleteWord }) {
   );
 }
 
-export default Home;
+export default WordsList;

@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .words-list {
-  border: 3px solid $main-font-color;
+  border: 3px solid $main-color;
   border-radius: 10px;
   list-style: none;
   overflow: hidden;
@@ -15,8 +15,9 @@
     max-width: 600px;
     background-color: $dark-backgroud-color;
     padding: 10px;
+
     &:nth-child(even) {
-      background-color: $main-font-hover-color;
+      background-color: $main-light-color;
     }
   }
 }
@@ -29,8 +30,10 @@
     background-color: transparent;
     margin-left: 10px;
     cursor: pointer;
+
     & img {
       width: 100%;
+
       &:hover {
         filter: brightness(0);
       }

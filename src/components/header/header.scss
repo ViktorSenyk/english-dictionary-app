@@ -7,10 +7,6 @@
   min-height: 150px;
   background-color: $dark-backgroud-color;
   padding: 10px 0;
-
-  &__title {
-    color: $main-font-color;
-  }
 }
 .navigation {
   &__links-list {
@@ -22,7 +18,7 @@
     & a {
       display: block;
       height: 30px;
-      color: $main-font-color;
+
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
@@ -31,8 +27,8 @@
       padding: 0 50px;
 
       &:hover {
-        color: $main-font-hover-color;
-        background-color: $main-font-color;
+        color: $main-light-color;
+        background-color: $main-color;
       }
     }
   }

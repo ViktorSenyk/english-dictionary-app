@@ -1,4 +1,4 @@
-import { ADD_NEW_WORD, DELETE_WORD } from './dictionary.actions';
+import { ADD_NEW_WORD, DELETE_WORD, ADD_SESSION_TO_HISTORY } from './dictionary.actions';
 
 const initialState = {
   storedWords: [
@@ -27,6 +27,11 @@ const dictionaryReducer = (state = initialState, action) => {
       return {
         ...state,
         storedWords: state.storedWords.filter(wordData => wordData.id !== action.payload.id),
+      };
+    case ADD_SESSION_TO_HISTORY:
+      return {
+        ...state,
+        history: [...state.history, action.payload.sessionData],
       };
     default:
       return state;

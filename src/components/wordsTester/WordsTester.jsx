@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import moment from 'moment';
 
 import './wordsTester.scss';
 
-function WordsTester({ storedWords }) {
+function WordsTester({ storedWords, addSessionToHistory }) {
   const [countOfWords, setCountOfWords] = useState(5);
   const [isTestStart, setIsTestStart] = useState(false);
   const [randomWordForTest, setRandomWordForTest] = useState(null);
@@ -34,6 +35,12 @@ function WordsTester({ storedWords }) {
   };
 
   const onTestReset = () => {
+    addSessionToHistory({
+      time: moment().format('DD.MM.YYYY HH:mm'),
+      wordsCount: resultOfTest.length,
+      percent: getPercentOfResult(),
+    });
+
     setResultOfTest([]);
     setIsTestStart(false);
   };

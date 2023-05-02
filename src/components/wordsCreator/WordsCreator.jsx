@@ -5,7 +5,7 @@ import './wordsCreator.scss';
 function WordsCreator({ addNewWord }) {
   const [inputsValue, setInputsValue] = useState({ wordInputValue: '', translateInputValue: '' });
 
-  const onCreateNewWord = e => {
+  const onCreate = e => {
     e.preventDefault();
     inputsValue.wordInputValue &&
       inputsValue.translateInputValue &&
@@ -35,11 +35,7 @@ function WordsCreator({ addNewWord }) {
           value={inputsValue.translateInputValue}
           onChange={e => setInputsValue({ ...inputsValue, translateInputValue: e.target.value })}
         />
-        <button
-          className="words-creator__submit-button"
-          type="submit"
-          onClick={e => onCreateNewWord(e)}
-        >
+        <button className="words-creator__submit-button" type="submit" onClick={e => onCreate(e)}>
           CREATE
         </button>
       </form>
