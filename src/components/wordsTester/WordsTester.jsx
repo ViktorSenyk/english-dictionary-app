@@ -36,6 +36,7 @@ function WordsTester({ storedWords, addSessionToHistory }) {
 
   const onTestReset = () => {
     addSessionToHistory({
+      id: Math.round(Math.random() * 1e8),
       time: moment().format('DD.MM.YYYY HH:mm'),
       wordsCount: resultOfTest.length,
       percent: getPercentOfResult(),
