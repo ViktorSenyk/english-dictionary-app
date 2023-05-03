@@ -12,7 +12,6 @@ function WordsTester({ storedWords, addSessionToHistory }) {
 
   const getRandomWordForTest = () =>
     setRandomWordForTest(storedWords[Math.floor(Math.random() * storedWords.length)]);
-
   const getRandomTranslates = () => {
     const randomTranslations = [];
     const countOfTranslations = 3;

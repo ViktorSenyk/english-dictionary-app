@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { storedWordsSelector, historySelector } from './dictionary.selectors';
-import { addNewWord, deleteWord, addSessionToHistory } from './dictionary.actions';
+import { storedWordsSelector, historySelector } from './redux/dictionary.selectors';
+import { addNewWord, deleteWord, addSessionToHistory } from './redux/dictionary.actions';
 
 import Header from './components/header/Header';
 import WordsList from './components/wordsList/WordsList';
